@@ -1,0 +1,53 @@
+{% extends 'cmdb.html' %}
+{% block cmdb-css %}
+    <style>
+        .show-msg{
+            position: absolute;
+            right: 0px;
+            left: 205px;
+            {#top: 2px;#}
+            {#bottom: 0px;#}
+            {#z-index: 90;#}
+            {#float: right;#}
+            {#width: 855px;#}
+
+            height: 100%;
+        }
+    </style>
+{% endblock %}
+
+<!-- 右侧主体 内容 -->
+{% block neirong %}
+<div class="show-msg">
+    <div class="">
+        <h1>资产列表</h1>
+        <div class="btn-group" role="group" aria-label="...">
+          <button id="idCheckAll" type="button" class="btn btn-default">全选</button>
+          <button id="idReverseAll" type="button" class="btn btn-default">反选</button>
+          <button id="idCancelAll" type="button" class="btn btn-default">取消</button>
+          <button id="idEditMode" type="button" class="btn btn-default">进入编辑模式</button>
+          <button type="button" class="btn btn-default">批量删除</button>
+          <button id="idSave" type="button" class="btn btn-default">保存</button>
+          <a id="idAdd" href="/web/asset-add.html" class="btn btn-default">添加</a>
+        </div>
+
+        <table class="table table-bordered">
+            <thead id="table_th"></thead>
+            <tbody id="table_td"></tbody>
+        </table>
+        <ul id="idPagination" class="pagination">
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block cmdb-js %}
+    <script type="text/javascript" src="/static/js/nbshiwei.js"></script>
+    <script>
+    $(function () {
+        $.NB("{{ target }}");
+    });
+    </script>
+
+{% endblock %}

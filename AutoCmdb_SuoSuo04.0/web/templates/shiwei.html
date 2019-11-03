@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<form action="#" id="myform">
+    <select name="shiwei" id="" >
+        <option value="shiwei" selected>施伟</option>
+    </select>
+</form>
+<script type="text/javascript" src="/static/js/de_jQuery_3_3_1.js"></script>
+<script type="text/javascript" src="/static/js/nbshiwei.js"></script>
+<script>
+    console.log('111wananshi'+$('#myform').find(':selected'));
+    $(function () {
+        $.NB("/show_addr");
+    })
+
+</script>
+</body>
+</html>

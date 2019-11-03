@@ -1,0 +1,57 @@
+{% extends  'include/layout.html' %}
+
+{% block css %}
+    <!--header-menu-->
+    <link rel="stylesheet" href="/static/css/index-header-menu.css">
+{#    <link rel="stylesheet" href="/static/css/index-header-login.css">#}
+    <!-- body-left-menu -->
+    <link rel="stylesheet" href="/static/css/body-left-menu.css">
+    {% block cmdb-css %}
+    
+    {% endblock %}
+{% endblock %}
+
+
+
+{% block content %}
+    <!-- 头部菜单 -->
+    {% include 'include/header-login-successed.html' %}
+{#  {% include 'include/header-login-failed.html' %}#}
+<div class="pg-body">
+    <!--  body 左侧菜单 -->
+    {% include 'include/body-left-menu.html' %}
+
+
+    <!-- body 右侧 -->
+    {% block neirong %}
+
+
+    {% endblock %}
+</div>
+
+{% endblock %}
+
+{% block js %}
+
+<script type="text/javascript" src="/static/plugins/highstock/code/highstock.js"></script>
+<script type="text/javascript" src="/static/plugins/highchart/code/highcharts.js"></script>
+<script type="text/javascript" src="/static/plugins/highchart/code/highcharts-3d.js"></script>
+<script type="text/javascript" src="/static/js/chart.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            initBusiness();
+            initCategory();
+            initGroup();
+            //initDynamic();
+        });
+    </script>
+    
+    {% block cmdb-js %}
+    
+    {% endblock %}
+
+{% endblock %}
+
+
+
+

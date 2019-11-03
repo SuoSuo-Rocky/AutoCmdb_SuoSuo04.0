@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .pg-header{
+            height: 48px!important;
+            background-color: #2F72AB;
+            line-height: 48px;
+            overflow: visible;
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+        .pg-header .logo{
+            height: 100%;
+            width: 200px;
+            overflow: hidden;
+            background-color: #1c5a9c;
+             cursor: pointer;
+        }
+        .pg-header .logo a{
+            display: block;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+            font-size: 29px;
+            font-weight: bold;
+            color: white!important;
+        }
+
+
+    </style>
+    <!-- pg-body-content     -->
+    <style>
+        .col-lg-3{
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        .box{
+            min-height: 140px;
+            margin-bottom: 30px;
+            position: relative;
+
+        }
+
+        .pg-body .row .box:hover{
+            border: 2px solid #dddddd;
+        }
+        .default-bg{
+            color: #ffffff;
+            background: #337ab7;
+            background-color: #337ab7;
+        }
+        .box i{
+            display: inline-block;
+            position: relative;
+            margin-top: 35px;
+            height: 140px;
+            line-height: 100%;
+            width: 40%;
+            text-align: center;
+            font-size: 70px;
+        }
+        .box a{
+            display: inline-block;
+            font-size: 30px;
+            color: white;
+            height: 140px;
+            line-height: 110px;
+            text-decoration: none;
+        }
+        .box .box-little{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .default-bg {
+            color: #fff;
+            background: #337ab7;
+            background-color: #337ab7;
+        }
+
+        .blue-bg {
+            color: #fff;
+            background: #57889c;
+            background-color: #57889c;
+        }
+
+        .brown-bg {
+            color: #fff;
+            background: #d1b993;
+            background-color: #d1b993;
+        }
+
+        .gray-bg {
+            color: #ddd;
+            background: #eee;
+            background-color: #eee;
+        }
+
+        .green-bg {
+            color: #fff;
+            background: #26c281;
+            background-color: #26c281;
+        }
+
+        .twitter-bg {
+            color: #fff;
+            background: #00aced;
+            background-color: #00aced;
+
+        }
+
+        .task-bg {
+            color: #fff;
+            background: #F2763F;
+            background-color: #F2763F;
+
+        }
+
+        .flow-bg {
+            color: #fff;
+            background: #6f5499;
+            background-color: #6f5499;
+
+        }
+
+        .pool-bg {
+            color: #fff;
+            background: #96B46E;
+            background-color: #96B46E;
+
+        }
+
+        .dns-bg {
+            color: #fff;
+            background-color: #96C746;
+        }
+
+    </style>
+
+    {% block css %}
+
+    {% endblock %}
+
+
+</head>
+<body>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <script type="text/javascript" src="/static/js/de_jQuery_3_3_1.js"></script>
+    <script type="text/javascript" src="/static/plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    {% block js %}
+
+    {% endblock %}
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

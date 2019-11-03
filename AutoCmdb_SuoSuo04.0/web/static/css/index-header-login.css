@@ -1,0 +1,17 @@
+    .pg-header{
+        border: none!important;
+        margin: 0px;
+        min-height: 48px;
+    }
+    .pg-header .navbar-nav a{
+        font-size: 20px;
+        color: white!important;
+
+    }
+    .pg-header .container-fluid{
+        height: 48px;
+    }
+    .pg-header .container-fluid{
+        padding-left: 0px;
+    }
+
